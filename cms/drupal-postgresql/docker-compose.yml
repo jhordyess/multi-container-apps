@@ -1,0 +1,15 @@
+services:
+  drupal-db:
+    image: postgres:11
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB=drupal
+  drupal:
+    image: drupal
+    depends_on:
+      - drupal-db
+    restart: always
+    ports:
+      - 80:80
