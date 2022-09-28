@@ -1,5 +1,7 @@
 # My multi-container apps
 
+Simple Docker multi-container apps compiled for use with docker compose.
+
 ## Apps
 
 ### CMS
