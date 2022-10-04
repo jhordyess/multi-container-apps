@@ -8,6 +8,7 @@ Simple Docker multi-container apps compiled for use with docker compose.
 
 - [Drupal](https://hub.docker.com/_/drupal) with [PostgreSQL](https://hub.docker.com/_/postgres) v11
 - [Ghost](https://hub.docker.com/_/ghost) v4 with [MySQL](https://hub.docker.com/_/mysql) v8
+- [Joomla!](https://hub.docker.com/_/joomla) with [MySQL](https://hub.docker.com/_/mysql) v5.6
 - [PrestaShop](https://hub.docker.com/r/prestashop/prestashop) with [MySQL](https://hub.docker.com/_/mysql) v5.7
 - [WordPress](https://hub.docker.com/_/wordpress) with [MySQL](https://hub.docker.com/_/mysql) v5.7
 
