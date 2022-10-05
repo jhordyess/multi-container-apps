@@ -1,0 +1,29 @@
+services:
+  magento-db:
+    image: mariadb:10.4
+    restart: always
+    environment:
+      - MARIADB_RANDOM_ROOT_PASSWORD="1"
+      - MARIADB_USER
+      - MARIADB_PASSWORD
+      - MARIADB_DATABASE
+  magento:
+    image: docker.io/bitnami/magento:2
+    depends_on:
+      - magento-db
+    ports:
+      - 80:8080
+      - 443:8443
+    environment:
+      - MAGENTO_HOST=localhost
+      - MAGENTO_DATABASE_HOST=magento-db
+      - MAGENTO_DATABASE_PORT_NUMBER=3306
+      - MAGENTO_DATABASE_USER
+      - MAGENTO_DATABASE_PASSWORD
+      - MAGENTO_DATABASE_NAME
+      - MAGENTO_USERNAME
+      - MAGENTO_PASSWORD
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT_NUMBER=9200
+  elasticsearch:
+    image: docker.io/bitnami/elasticsearch:7
