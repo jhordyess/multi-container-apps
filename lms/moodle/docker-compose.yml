@@ -1,0 +1,24 @@
+services:
+  moodle-db:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      - MARIADB_RANDOM_ROOT_PASSWORD="1"
+      - MARIADB_USER
+      - MARIADB_PASSWORD
+      - MARIADB_DATABASE
+  moodle:
+    image: docker.io/bitnami/moodle:4
+    depends_on:
+      - moodle-db
+    ports:
+      - 80:8080
+      - 443:8443
+    environment:
+      - MOODLE_DATABASE_HOST=moodle-db
+      - MOODLE_DATABASE_PORT_NUMBER=3306
+      - MOODLE_DATABASE_USER
+      - MOODLE_DATABASE_NAME
+      - MOODLE_DATABASE_PASSWORD
+      - MOODLE_USERNAME
+      - MOODLE_PASSWORD
