@@ -31,5 +31,9 @@ Simple Docker multi-container apps compiled for use with docker compose.
 
 - [Odoo](https://hub.docker.com/_/odoo) 15 with with [PostgreSQL](https://hub.docker.com/_/postgres) v14
 
+### LMS
+
+- [Moodle by Bitnami](https://hub.docker.com/r/bitnami/moodle) with with [MariaDB](https://hub.docker.com/_/mariadb) v10
+
 ---
 Made with 💪 by [Jhordyess](https://www.jhordyess.com/)
