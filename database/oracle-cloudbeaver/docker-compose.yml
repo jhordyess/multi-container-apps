@@ -1,0 +1,16 @@
+services:
+  oracle-db:
+    image: container-registry.oracle.com/database/express:latest
+    restart: always
+    ports:
+      - 1521:1521
+      - 5500:5500
+    environment:
+      - ORACLE_PWD
+  dbeaver:
+    image: dbeaver/cloudbeaver:latest
+    depends_on:
+      - oracle-db
+    restart: always
+    ports:
+      - 8080:8978

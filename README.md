@@ -19,6 +19,7 @@ Simple Docker multi-container apps compiled for use with docker compose.
 - [MariaDB](https://hub.docker.com/_/mariadb) with [phpMyAdmin](https://hub.docker.com/_/phpmyadmin)
 - [MongoDB](https://hub.docker.com/_/mongo) with [mongo-express](https://hub.docker.com/_/mongo-express)
 - [MySQL](https://hub.docker.com/_/mysql) v5.6 with [phpMyAdmin](https://hub.docker.com/_/phpmyadmin)
+- [Oracle DB 🤔](https://container-registry.oracle.com) v21 with [CloudBeaver 😏](https://hub.docker.com/r/dbeaver/cloudbeaver) v22
 - [PostgreSQL](https://hub.docker.com/_/postgres) with [pgAdmin](https://hub.docker.com/r/dpage/pgadmin4) v4
 - [Microsoft SQL Server](https://hub.docker.com/_/microsoft-mssql-server) 2019 with [Adminer](https://hub.docker.com/_/adminer)
 
