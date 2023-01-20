@@ -15,5 +15,3 @@ services:
       - 80:80
     environment:
       - PMA_HOST=pma-db
-      # - PMA_PORT=3306
-      # - PMA_ARBITRARY=1
