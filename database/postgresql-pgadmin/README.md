@@ -1,4 +1,4 @@
-# Oracle & CloudBeaver
+# PostgreSQL & pgAdmin
 
 PostgreSQL 15
 
