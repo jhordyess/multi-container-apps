@@ -13,6 +13,7 @@ Simple Docker multi-container apps compiled for use with docker compose.
 
 - [Drupal](https://hub.docker.com/_/drupal) with [PostgreSQL](https://hub.docker.com/_/postgres) v11
 - [Joomla!](https://hub.docker.com/_/joomla) with [MySQL](https://hub.docker.com/_/mysql) v5.6
+- [Strapi by naskio](https://hub.docker.com/r/naskio/strapi) with [PostgreSQL](https://hub.docker.com/_/postgres) and [pgAdmin](https://hub.docker.com/r/dpage/pgadmin4) v4
 
 ### Database
 

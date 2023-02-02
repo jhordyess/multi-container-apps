@@ -1,0 +1,42 @@
+services:
+  pga-db:
+    image: postgres
+    restart: on-failure
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+  pga:
+    depends_on:
+      - pga-db
+    image: dpage/pgadmin4
+    restart: on-failure
+    ports:
+      - 80-90:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL
+      - PGADMIN_DEFAULT_PASSWORD
+  strapi:
+    depends_on:
+      - pga-db
+    image: naskio/strapi
+    restart: on-failure
+    ports:
+      - 1337:1337
+    environment:
+      - NODE_ENV
+      - HOST=0.0.0.0
+      - PORT=1337
+      - APP_KEYS
+      - API_TOKEN_SALT
+      - ADMIN_JWT_SECRET
+      - JWT_SECRET
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=pga-db
+      - DATABASE_PORT=5432
+      - DATABASE_SSL=false
+      - DATABASE_USERNAME
+      - DATABASE_PASSWORD
+      - DATABASE_NAME

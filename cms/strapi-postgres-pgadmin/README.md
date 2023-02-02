@@ -4,6 +4,8 @@ PostgreSQL 15
 
 pgAdmin 4
 
+Strapi v4
+
 ## pgAdmin Login
 
 User name | User password
@@ -16,4 +18,4 @@ fake@domain.com | ChooseAnotherPasswordPlease
 
 Host name/address | Port | Maintenance database | Username | Password
 -|-|-|-|-
-pga-db | 5432 | postgres | postgres | ChooseAnotherPassword
+pga-db | 5432 | unknowndb | fakedoe | ChooseAnotherPassword
